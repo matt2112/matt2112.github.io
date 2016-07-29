@@ -2,20 +2,9 @@
     padding: 0;
 }
 
-h1 {
-    color: blue;
-}
-
-.test {
-    width: 50%;
+#home {
     height: 200px;
-    background-color: red;
-    float: left;
-    border: {
-        color: black;
-        style: solid;
-        width: 5px;
-    }
+    background-color: antiquewhite;
 }
 
 .navbar-toggler {
@@ -25,4 +14,8 @@ h1 {
 .nav-item-adjust {
     clear: both;
     float: right !important;
+}
+
+.card {
+    padding: 1%;
 }

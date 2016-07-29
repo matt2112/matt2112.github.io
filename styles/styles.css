@@ -1,17 +1,9 @@
 .container-fluid {
   padding: 0; }
 
-h1 {
-  color: blue; }
-
-.test {
-  width: 50%;
+#home {
   height: 200px;
-  background-color: red;
-  float: left;
-  border-color: black;
-  border-style: solid;
-  border-width: 5px; }
+  background-color: antiquewhite; }
 
 .navbar-toggler {
   float: right; }
@@ -19,5 +11,8 @@ h1 {
 .nav-item-adjust {
   clear: both;
   float: right !important; }
+
+.card {
+  padding: 1%; }
 
 /*# sourceMappingURL=styles.css.map */
