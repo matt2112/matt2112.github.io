@@ -1,20 +1,22 @@
 .container-fluid {
   padding: 0; }
 
-.row {
-  margin: 0;
-  margin-top: 15px;
-  padding: 15px; }
-
-#home {
-  height: 200px;
-  background-color: antiquewhite; }
-
 .navbar-toggler {
   float: right; }
 
 .nav-item-adjust {
   clear: both;
   float: right !important; }
+
+.row {
+  margin: 0;
+  padding: 15px; }
+
+#home {
+  height: 200px;
+  background-color: antiquewhite; }
+
+img {
+  padding-top: 15px; }
 
 /*# sourceMappingURL=styles.css.map */
