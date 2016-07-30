@@ -2,6 +2,13 @@
     padding: 0;
 }
 
+.row {
+    
+    margin: 0;
+    margin-top: 15px;
+    padding: 15px;
+}
+
 #home {
     height: 200px;
     background-color: antiquewhite;
@@ -14,8 +21,4 @@
 .nav-item-adjust {
     clear: both;
     float: right !important;
-}
-
-.card {
-    padding: 1%;
 }
