@@ -21,4 +21,13 @@ img {
 .nav-link {
   height: 40px; }
 
+.card-block {
+  padding-left: 3%;
+  min-height: 160px; }
+
+.code-link {
+  position: absolute;
+  bottom: 10px;
+  margin-left: 3%; }
+
 /*# sourceMappingURL=styles.css.map */
