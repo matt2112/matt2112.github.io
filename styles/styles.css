@@ -1,12 +1,11 @@
+body {
+  padding-top: 70px; }
+
 .container-fluid {
   padding: 0; }
 
 .navbar-toggler {
   float: right; }
-
-.nav-item-adjust {
-  clear: both;
-  float: right !important; }
 
 .row {
   margin: 0;
