@@ -1,21 +1,23 @@
-body {
-  padding-top: 70px; }
-
 .container-fluid {
   padding: 0; }
-
-.navbar-toggler {
-  float: right; }
 
 .row {
   margin: 0;
   padding: 15px; }
 
 #home {
-  height: 200px;
-  background-color: antiquewhite; }
+  height: 6em;
+  padding: 1em;
+  background-color: antiquewhite;
+  font-size: 2em; }
 
 img {
   padding-top: 15px; }
+
+#navList {
+  clear: both; }
+
+.nav-item, .nav-link {
+  height: 40px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,13 +1,5 @@
-body {
-    padding-top: 70px;
-}
-
 .container-fluid {
     padding: 0;
-}
-
-.navbar-toggler {
-    float: right;
 }
 
 .row {
@@ -16,14 +8,23 @@ body {
 }
 
 #home {
-    height: 200px;
+    height: 6em;
+    padding: 1em;
     background-color: antiquewhite;
+    font-size: 2em;
 }
 
 #projects {
-//    background-color: aquamarine;
 }
 
 img {
     padding-top: 15px;
+}
+
+#navList {
+    clear: both;
+}
+
+.nav-item, .nav-link {
+    height: 40px;
 }
