@@ -17,7 +17,8 @@ img {
 #navList {
   clear: both; }
 
-.nav-item, .nav-link {
+.nav-item,
+.nav-link {
   height: 40px; }
 
 /*# sourceMappingURL=styles.css.map */
