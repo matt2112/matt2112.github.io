@@ -20,6 +20,13 @@
 
 img {
     padding-top: 15px;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
 #navList {
@@ -33,7 +40,11 @@ img {
 
 .card-block {
     padding-left: 3%;
-    min-height: 160px;
+}
+
+
+.card-block > p {
+    padding-bottom: 40px;
 }
 
 .code-link {
@@ -41,3 +52,4 @@ img {
     bottom: 10px;
     margin-left: 3%;
 }
+
