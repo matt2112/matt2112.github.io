@@ -15,20 +15,19 @@
 }
 
 #home > * {
-    float: left;
+    text-align: center;
 }
 
 #profile-pic {
     border-radius: 10px;
-    float: left;
 }
 
 #summary {
-    padding: {
-        top: 20px;
-        left: 20px;
-    }
-    max-width: 600px;
+    padding-top: 20px;
+}
+
+#projects {
+    clear: both;
 }
 
 .card-img-top {
@@ -71,24 +70,22 @@
     max-width: 700px;
 }
 
-@media screen and (max-width: 543px) {
-    #profile-pic-container {
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-    }
-    
-    #profile-pic {
-        float: none;
-    }
-    
-    #summary {
-        text-align: center;
+@media screen and (min-width: 544px) {
+    #home > * {
+        text-align: left;
     }
 }
 
-@media screen and (min-width: 544px) and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+    
+    #profile-pic-container {
+        float: left;
+    }
+
     #summary {
-        padding-left: 0px !important;    
-    }   
+        padding-top: 0;
+        max-width: 900px;
+        position: relative;
+        left: 20px;
+    }
 }
