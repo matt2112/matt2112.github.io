@@ -7,9 +7,22 @@
     padding: 15px;
 }
 
+#navList {
+    clear: both;
+}
+
+.nav-item,
+.nav-link {
+    height: 40px;
+}
+
 #home {
     padding: 1em;
-    background-color: antiquewhite;
+    background: url('../img/lake1.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-size: 2em;
     overflow: auto;
 }
@@ -23,33 +36,26 @@
 }
 
 #summary {
-    padding-top: 20px;
+    max-width: 500px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #222;
 }
 
 #projects {
     clear: both;
+    background-color: #f7f7f9;
 }
 
 .card-img-top {
     padding-top: 15px;
     opacity: 0.7;
-    filter: alpha(opacity=70);
-    /* For IE8 and earlier */
+    filter: alpha(opacity=70); /* For IE8 and earlier */
 }
 
 .card-img-top:hover {
     opacity: 1.0;
-    filter: alpha(opacity=100);
-    /* For IE8 and earlier */
-}
-
-#navList {
-    clear: both;
-}
-
-.nav-item,
-.nav-link {
-    height: 40px;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
 .card-block {
@@ -70,6 +76,14 @@
     max-width: 700px;
 }
 
+#about {
+    background-color: #cce5ff;
+}
+
+#contact {
+    background-color: #f7f7f9;
+}
+
 @media screen and (min-width: 544px) {
     #home > * {
         text-align: left;
@@ -77,15 +91,19 @@
 }
 
 @media screen and (min-width: 768px) {
-    
     #profile-pic-container {
         float: left;
     }
+    
+    #summary {
+        position: relative;
+        float: left;
+    }
+}
 
+@media screen and (min-width: 868px) {
     #summary {
         padding-top: 0;
-        max-width: 900px;
-        position: relative;
-        left: 20px;
+        left: 10px;
     }
 }
