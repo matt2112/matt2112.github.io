@@ -34,7 +34,7 @@
   font-weight: bold;
   color: #222; }
 
-#projects {
+#featured-projects {
   clear: both;
   background-color: #f7f7f9; }
 
@@ -63,11 +63,20 @@
 .list-group {
   max-width: 700px; }
 
-#about {
+#other-projects {
   background-color: #cce5ff; }
 
-#contact {
+#panel-heading a {
+  color: #333; }
+
+#expand-span {
+  font-size: 18px; }
+
+#about {
   background-color: #f7f7f9; }
+
+#contact {
+  background-color: #cce5ff; }
 
 @media screen and (min-width: 544px) {
   #home > * {
