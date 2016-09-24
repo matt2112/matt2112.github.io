@@ -36,10 +36,11 @@
 }
 
 #summary {
-    max-width: 500px;
+    max-width: 400px;
     padding-top: 10px;
     font-weight: bold;
     color: #222;
+    font-size: 25px;
 }
 
 #featured-projects {
@@ -111,12 +112,14 @@
     #summary {
         position: relative;
         float: left;
+        padding-top: 0;
+        left: 10px;
     }
 }
 
-@media screen and (min-width: 868px) {
+@media screen and (min-width: 992px) {
     #summary {
-        padding-top: 0;
-        left: 10px;
+        font-size: 30px;
+        max-width: 480px;
     }
 }

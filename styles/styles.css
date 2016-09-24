@@ -29,10 +29,11 @@
   border-radius: 10px; }
 
 #summary {
-  max-width: 500px;
+  max-width: 400px;
   padding-top: 10px;
   font-weight: bold;
-  color: #222; }
+  color: #222;
+  font-size: 25px; }
 
 #featured-projects {
   clear: both;
@@ -87,10 +88,12 @@
 
   #summary {
     position: relative;
-    float: left; } }
-@media screen and (min-width: 868px) {
-  #summary {
+    float: left;
     padding-top: 0;
     left: 10px; } }
+@media screen and (min-width: 992px) {
+  #summary {
+    font-size: 30px;
+    max-width: 480px; } }
 
 /*# sourceMappingURL=styles.css.map */
