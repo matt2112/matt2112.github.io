@@ -7,13 +7,33 @@
     padding: 15px;
 }
 
-#navList {
-    clear: both;
+#navbar {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#name {
+    position: absolute;
+    top: 0;
+    left: 31px;
+    height: 100%;
+    padding-top: 8px;
+    z-index: 100;
 }
 
 .nav-item,
 .nav-link {
     height: 40px;
+    clear: right;
+    text-align: right;
+}
+
+.navbar-toggler {
+    float: right;
 }
 
 #home {
