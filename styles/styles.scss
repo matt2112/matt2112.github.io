@@ -1,10 +1,11 @@
 // Colour variables
-//$green: #00b3b3;
-$green: #6bb2f2;
-$grey: #CCC;
-
+$black: #222;
+$darkgrey: #373a3c;
+$lightgrey: #b3b3b3;
+$white: #fff;
 .container-fluid {
     padding: 0;
+    margin-top: 54px;
 }
 
 .row {
@@ -12,42 +13,22 @@ $grey: #CCC;
     padding: 15px;
 }
 
-#navbar {
-    width: 100%;
-    border-radius: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: $grey;
-}
-
-#navinnav {
-    background-color: $grey;
-}
-
-#name {
-    position: absolute;
-    top: 0;
-    left: 31px;
-    height: 100%;
-    padding-top: 8px;
-    z-index: 100;
-}
-
 .nav-item,
 .nav-link {
     height: 40px;
     clear: right;
     text-align: right;
+    color: $white !important;
 }
 
 .navbar-toggler {
     float: right;
+    color: #fff;
 }
 
 #home {
     padding: 1em;
+    height: 400px;
     background: url('../img/lake1.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -69,12 +50,13 @@ $grey: #CCC;
     max-width: 400px;
     padding-top: 10px;
     font-weight: bold;
-    color: #222;
+    color: $black;
     font-size: 25px;
 }
 
 #featured-projects {
-    background-color: $grey;
+    background-color: $darkgrey;
+    color: #fff;
 }
 
 #inner-row {
@@ -82,7 +64,13 @@ $grey: #CCC;
 }
 
 #featured-projects > .card {
-    background-color: $green;
+    color: $darkgrey;
+    background-color: $lightgrey;
+}
+
+#featured-projects .btn {
+    color: $white;
+    background-color: $darkgrey;
 }
 
 .card {
@@ -91,8 +79,8 @@ $grey: #CCC;
 
 .card-img-top {
     padding-top: 15px;
-    opacity: 0.9;
-    filter: alpha(opacity=70);
+    opacity: 0.8;
+    filter: alpha(opacity=80);
     /* For IE8 and earlier */
 }
 
@@ -113,7 +101,7 @@ $grey: #CCC;
 .code-link {
     position: absolute;
     bottom: 10px;
-//    margin-left: 3%;
+    //    margin-left: 3%;
 }
 
 .list-group {
@@ -121,11 +109,17 @@ $grey: #CCC;
 }
 
 #other-projects {
-    background-color: $green;
+    background-color: $lightgrey;
 }
 
 #other-projects .card {
-    background-color: $grey;
+    color: $white;
+    background-color: $darkgrey;
+}
+
+#other-projects .btn {
+    color: $darkgrey;
+    background-color: $lightgrey;
 }
 
 #panel-heading a {
@@ -137,11 +131,27 @@ $grey: #CCC;
 }
 
 #about {
-    background-color: $grey;
+    color: $white;
+    background-color: $darkgrey;
+}
+
+#about a {
+    color: $lightgrey;
+}
+
+#about ul {
+    color: $darkgrey;
+    background-color: $lightgrey;
 }
 
 #contact {
-    background-color: $green;
+    color: $darkgrey;
+    background-color: $lightgrey;
+}
+
+#contact .btn {
+    color: $white;
+    background-color: $darkgrey;
 }
 
 // Bootstrap small size
@@ -164,6 +174,8 @@ $grey: #CCC;
         float: left;
         padding-top: 0;
         left: 10px;
+        font-size: 30px;
+        max-width: 480px;
     }
     .card {
         max-width: 32%;
@@ -172,10 +184,7 @@ $grey: #CCC;
 
 // Bootstrap large size
 @media screen and (min-width: 992px) {
-    #summary {
-        font-size: 30px;
-        max-width: 480px;
-    }
+    #summary {}
     .card {
         max-width: 32%;
     }

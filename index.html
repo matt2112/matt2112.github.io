@@ -14,9 +14,10 @@
 </head>
 
 <body>
-    <nav id="navbar" class="navbar navbar-light bg-faded">
-        <p id="name"><a class="navbar-brand" href="#">Matt Lewis</a></p>
-        <nav id="navinnav" class="navbar navbar-light bg-faded">
+    
+    <nav id="navbar" class="navbar navbar-dark bg-inverse navbar-fixed-top">
+        <a id="name" class="navbar-brand" href="#">Matt Lewis</a>
+        <div id="menu" class="pull-xs-right">
             <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
                 &#9776;
             </button>
@@ -44,9 +45,9 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-
+        </div>
     </nav>
+    
     <div class="container-fluid">
 
         <section id="home">
@@ -70,7 +71,7 @@
                     <h4 class="card-title">Game of Life</h4>
                     <p class="card-text">A game of life generator. Built using React and SASS.</p>
                 </div>
-                <a href="https://github.com/matt2112/game-of-life" target="_blank" class="btn btn-primary code-link">View code on GitHub</a>
+                <a href="https://github.com/matt2112/game-of-life" target="_blank" class="btn code-link">View code on GitHub</a>
 
             </article>
 
@@ -82,7 +83,7 @@
                     <h4 class="card-title">Recipe box</h4>
                     <p class="card-text">Create recipes and store them locally. Built using React, SASS and react-bootstrap.</p>
                 </div>
-                <a href="https://github.com/matt2112/recipe-box" target="_blank" class="btn btn-primary code-link">View code on GitHub</a>
+                <a href="https://github.com/matt2112/recipe-box" target="_blank" class="btn code-link">View code on GitHub</a>
             </article>
 
             <article class="card col-sm-6 col-md-4 col-xl-3">
@@ -93,7 +94,7 @@
                     <h4 class="card-title">Simon Game</h4>
                     <p class="card-text">A Simon Game imitation, built using Javascript and CSS.</p>
                 </div>
-                <a href="https://github.com/matt2112/simon-game" target="_blank" class="btn btn-primary code-link">View code on GitHub</a>
+                <a href="https://github.com/matt2112/simon-game" target="_blank" class="btn code-link">View code on GitHub</a>
             </article>
 
             <article class="card col-sm-6 col-md-4 col-xl-3">
@@ -104,7 +105,7 @@
                     <h4 class="card-title">Twitch browser app</h4>
                     <p class="card-text">An app that uses the Twitch API to present links to streams on the Twitch website, built using Angular 2, Typescript, Bootstrap and CSS.</p>
                 </div>
-                <a href="https://github.com/matt2112/TwitchProject" target="_blank" class="btn btn-primary code-link">View code on GitHub</a>
+                <a href="https://github.com/matt2112/TwitchProject" target="_blank" class="btn code-link">View code on GitHub</a>
 
             </article>
 
@@ -116,7 +117,7 @@
                     <h4 class="card-title">Random Quote Machine</h4>
                     <p class="card-text">An app that generates quotes from a custom api, built using jQuery and CSS.</p>
                 </div>
-                <a href="http://codepen.io/matt2112/pen/mVarRO" target="_blank" class="btn btn-primary code-link">View code on CodePen</a>
+                <a href="http://codepen.io/matt2112/pen/mVarRO" target="_blank" class="btn code-link">View code on CodePen</a>
             </article>
 
 
@@ -151,7 +152,7 @@
                                 <h4 class="card-title">Markdown Previewer</h4>
                                 <p class="card-text">An app to convert markdown to html as you type, built using React and SASS.</p>
                             </div>
-                            <a href="https://github.com/matt2112/markdown-previewer" target="_blank" class="btn btn-primary code-link">View code on GitHub</a>
+                            <a href="https://github.com/matt2112/markdown-previewer" target="_blank" class="btn code-link">View code on GitHub</a>
                         </article>
 
                         <article class="card col-sm-6 col-md-4 col-xl-3">
@@ -162,7 +163,7 @@
                                 <h4 class="card-title">Camper Leaderboard</h4>
                                 <p class="card-text">An app to convert markdown to present data from the freeCodeCamp api.</p>
                             </div>
-                            <a href="https://github.com/matt2112/camper-leaderboard" target="_blank" class="btn btn-primary code-link">View code on GitHub</a>
+                            <a href="https://github.com/matt2112/camper-leaderboard" target="_blank" class="btn  code-link">View code on GitHub</a>
                         </article>
 
                         <article class="card col-sm-6 col-md-4 col-xl-3">
@@ -182,7 +183,7 @@
                                 <h4 class="card-title">Pomodoro Clock</h4>
                                 <p class="card-text">A timer for practitioners of the pomodoro technique, built using Javascript, CSS and jQuery.</p>
                             </div>
-                            <a href="http://codepen.io/matt2112/pen/BzzrOB" target="_blank" class="btn btn-primary code-link">View code on CodePen</a>
+                            <a href="http://codepen.io/matt2112/pen/BzzrOB" target="_blank" class="btn code-link">View code on CodePen</a>
                         </article>
 
                         <article class="card col-sm-6 col-md-4 col-xl-3">
@@ -193,7 +194,7 @@
                                 <h4 class="card-title">TicTacToe</h4>
                                 <p class="card-text">A TicTacToe game, built using jQuery, Javascript and CSS.</p>
                             </div>
-                            <a href="http://codepen.io/matt2112/pen/BzYqLp" target="_blank" class="btn btn-primary code-link">View code on CodePen</a>
+                            <a href="http://codepen.io/matt2112/pen/BzYqLp" target="_blank" class="btn code-link">View code on CodePen</a>
                         </article>
 
                         <article class="card col-sm-6 col-md-4 col-xl-3">
@@ -204,7 +205,7 @@
                                 <h4 class="card-title">Local Weather App</h4>
                                 <p class="card-text">An app to access information about the local weather using an API, built using Javascript, CSS and jQuery.</p>
                             </div>
-                            <a href="http://codepen.io/matt2112/pen/vGGByN" target="_blank" class="btn btn-primary code-link">View code on CodePen</a>
+                            <a href="http://codepen.io/matt2112/pen/vGGByN" target="_blank" class="btn code-link">View code on CodePen</a>
                         </article>
 
                         <article class="card col-sm-6 col-md-4 col-xl-3">
@@ -215,7 +216,7 @@
                                 <h4 class="card-title">Calculator</h4>
                                 <p class="card-text">A simple calculator, built using Javascript and CSS.</p>
                             </div>
-                            <a href="http://codepen.io/matt2112/pen/KzvVBX" target="_blank" class="btn btn-primary code-link">View code on CodePen</a>
+                            <a href="http://codepen.io/matt2112/pen/KzvVBX" target="_blank" class="btn code-link">View code on CodePen</a>
                         </article>
 
                         <article class="card col-sm-6 col-md-4 col-xl-3">
@@ -226,7 +227,7 @@
                                 <h4 class="card-title">Wikipedia App</h4>
                                 <p class="card-text">An app that interfaces with Wikipedia's API, built using Javascript, CSS and jQuery.</p>
                             </div>
-                            <a href="http://codepen.io/matt2112/pen/pyZrNr" target="_blank" class="btn btn-primary code-link">View code on CodePen</a>
+                            <a href="http://codepen.io/matt2112/pen/pyZrNr" target="_blank" class="btn code-link">View code on CodePen</a>
                         </article>
 
                         <article class="card col-sm-6 col-md-4 col-xl-3">
@@ -237,7 +238,7 @@
                                 <h4 class="card-title">Bertrand Russell tribute page</h4>
                                 <p class="card-text">A simple tribute page to the philosopher, built using CSS and Bootstrap 3.</p>
                             </div>
-                            <a href="http://codepen.io/matt2112/pen/QyPqLq" target="_blank" class="btn btn-primary code-link">View code on CodePen</a>
+                            <a href="http://codepen.io/matt2112/pen/QyPqLq" target="_blank" class="btn code-link">View code on CodePen</a>
                         </article>
 
                     </div>
@@ -285,7 +286,7 @@
                         <label for="message">Message</label>
                         <textarea name="message" class="form-control" rows="7"></textarea>
                     </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
+                    <input type="submit" value="Send" class="btn">
                 </div>
             </form>
         </section>

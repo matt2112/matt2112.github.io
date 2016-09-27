@@ -1,41 +1,25 @@
 .container-fluid {
-  padding: 0; }
+  padding: 0;
+  margin-top: 54px; }
 
 .row {
   margin: 0;
   padding: 15px; }
 
-#navbar {
-  width: 100%;
-  border-radius: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #CCC; }
-
-#navinnav {
-  background-color: #CCC; }
-
-#name {
-  position: absolute;
-  top: 0;
-  left: 31px;
-  height: 100%;
-  padding-top: 8px;
-  z-index: 100; }
-
 .nav-item,
 .nav-link {
   height: 40px;
   clear: right;
-  text-align: right; }
+  text-align: right;
+  color: #fff !important; }
 
 .navbar-toggler {
-  float: right; }
+  float: right;
+  color: #fff; }
 
 #home {
   padding: 1em;
+  height: 400px;
   background: url("../img/lake1.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -58,18 +42,24 @@
   font-size: 25px; }
 
 #featured-projects {
-  background-color: #CCC; }
+  background-color: #373a3c;
+  color: #fff; }
 
 #featured-projects > .card {
-  background-color: #6bb2f2; }
+  color: #373a3c;
+  background-color: #b3b3b3; }
+
+#featured-projects .btn {
+  color: #fff;
+  background-color: #373a3c; }
 
 .card {
   margin: 5px auto; }
 
 .card-img-top {
   padding-top: 15px;
-  opacity: 0.9;
-  filter: alpha(opacity=70);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
   /* For IE8 and earlier */ }
 
 .card-img-top:hover {
@@ -91,10 +81,15 @@
   max-width: 700px; }
 
 #other-projects {
-  background-color: #6bb2f2; }
+  background-color: #b3b3b3; }
 
 #other-projects .card {
-  background-color: #CCC; }
+  color: #fff;
+  background-color: #373a3c; }
+
+#other-projects .btn {
+  color: #373a3c;
+  background-color: #b3b3b3; }
 
 #panel-heading a {
   color: #333; }
@@ -103,10 +98,23 @@
   font-size: 18px; }
 
 #about {
-  background-color: #CCC; }
+  color: #fff;
+  background-color: #373a3c; }
+
+#about a {
+  color: #b3b3b3; }
+
+#about ul {
+  color: #373a3c;
+  background-color: #b3b3b3; }
 
 #contact {
-  background-color: #6bb2f2; }
+  color: #373a3c;
+  background-color: #b3b3b3; }
+
+#contact .btn {
+  color: #fff;
+  background-color: #373a3c; }
 
 @media screen and (min-width: 544px) {
   #home > * {
@@ -122,15 +130,13 @@
     position: relative;
     float: left;
     padding-top: 0;
-    left: 10px; }
+    left: 10px;
+    font-size: 30px;
+    max-width: 480px; }
 
   .card {
     max-width: 32%; } }
 @media screen and (min-width: 992px) {
-  #summary {
-    font-size: 30px;
-    max-width: 480px; }
-
   .card {
     max-width: 32%; } }
 @media screen and (min-width: 1200px) {
