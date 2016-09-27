@@ -1,8 +1,19 @@
-// Colour variables
+// Variables
 $black: #222;
 $darkgrey: #373a3c;
 $lightgrey: #b3b3b3;
 $white: #fff;
+// Mixins
+@mixin white-on-grey {
+    color: $white;
+    background-color: $darkgrey;
+}
+
+@mixin dark-on-light {
+    color: $darkgrey;
+    background-color: $lightgrey;
+}
+
 .container-fluid {
     padding: 0;
     margin-top: 54px;
@@ -55,8 +66,7 @@ $white: #fff;
 }
 
 #featured-projects {
-    background-color: $darkgrey;
-    color: #fff;
+    @include white-on-grey;
 }
 
 #inner-row {
@@ -69,8 +79,7 @@ $white: #fff;
 }
 
 #featured-projects .btn {
-    color: $white;
-    background-color: $darkgrey;
+    @include white-on-grey;
 }
 
 .card {
@@ -106,20 +115,19 @@ $white: #fff;
 
 .list-group {
     max-width: 700px;
+    .tag {
+        @include white-on-grey;
+    }
 }
 
 #other-projects {
     background-color: $lightgrey;
-}
-
-#other-projects .card {
-    color: $white;
-    background-color: $darkgrey;
-}
-
-#other-projects .btn {
-    color: $darkgrey;
-    background-color: $lightgrey;
+    .card {
+        @include white-on-grey;
+    }
+    .btn {
+        @include dark-on-light;
+    }
 }
 
 #panel-heading a {
@@ -133,25 +141,31 @@ $white: #fff;
 #about {
     color: $white;
     background-color: $darkgrey;
-}
-
-#about a {
-    color: $lightgrey;
-}
-
-#about ul {
-    color: $darkgrey;
-    background-color: $lightgrey;
+    a {
+        color: $lightgrey;
+    }
+    ul {
+        color: $darkgrey;
+        li {
+            .list-text {
+                max-width: 50vmin;
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
 }
 
 #contact {
     color: $darkgrey;
     background-color: $lightgrey;
-}
-
-#contact .btn {
-    color: $white;
-    background-color: $darkgrey;
+    textarea {
+        resize: none;
+    }
+    .btn {
+        @include white-on-grey;
+    }
 }
 
 // Bootstrap small size
