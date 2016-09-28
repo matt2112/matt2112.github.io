@@ -1,27 +1,25 @@
-.container-fluid {
+body .container-fluid {
   padding: 0;
   margin-top: 54px; }
-
-.row {
+body .row {
   margin: 0;
   padding: 15px; }
-
-.card {
+body .card {
   margin: 5px auto; }
-  .card .card-img-top {
+  body .card .card-img-top {
     padding-top: 15px;
     opacity: 0.8;
     /* For IE8 and earlier */
     filter: alpha(opacity=80); }
-  .card .card-img-top:hover {
+  body .card .card-img-top:hover {
     opacity: 1.0;
     /* For IE8 and earlier */
     filter: alpha(opacity=100); }
-  .card .card-block {
+  body .card .card-block {
     padding-left: 3%; }
-    .card .card-block p {
+    body .card .card-block p {
       padding-bottom: 40px; }
-  .card .btn {
+  body .card .btn {
     position: absolute;
     bottom: 10px; }
 
@@ -76,6 +74,9 @@ nav .navbar-toggler {
   #other-projects .btn {
     color: #373a3c;
     background-color: #b3b3b3; }
+  #other-projects .btn:hover {
+    color: #fff;
+    background-color: #222; }
 
 #about {
   color: #fff;
@@ -104,6 +105,14 @@ nav .navbar-toggler {
     #contact form .btn {
       color: #fff;
       background-color: #373a3c; }
+
+footer {
+  color: #fff;
+  background-color: #373a3c;
+  text-align: center; }
+  footer p {
+    margin: 0;
+    padding: 10px; }
 
 @media screen and (min-width: 544px) {
   #home {
