@@ -141,6 +141,16 @@ nav {
             @include white-on-grey;
         }
     }
+    #external-links {
+        margin-top: 20px;
+        p {
+            img {
+                width: 100px;
+                height: 40px;
+                background-color: $white;
+            }
+        }
+    }
 }
 
 // Contact section

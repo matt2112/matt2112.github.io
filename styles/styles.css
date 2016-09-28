@@ -93,6 +93,12 @@ nav .navbar-toggler {
     #about ul .tag {
       color: #fff;
       background-color: #373a3c; }
+  #about #external-links {
+    margin-top: 20px; }
+    #about #external-links p img {
+      width: 100px;
+      height: 40px;
+      background-color: #fff; }
 
 #contact {
   color: #373a3c;
