@@ -57,14 +57,16 @@ nav .navbar-toggler {
 #featured-projects {
   color: #fff;
   background-color: #373a3c; }
-  #featured-projects .card {
-    color: #373a3c;
-    background-color: #b3b3b3; }
-    #featured-projects .card .btn {
-      color: #fff;
-      background-color: #373a3c; }
-    #featured-projects .card .btn:hover {
-      background-color: #555; }
+  #featured-projects #fp-inner-container {
+    -webkit-animation-duration: 0.7s; }
+    #featured-projects #fp-inner-container .card {
+      color: #373a3c;
+      background-color: #b3b3b3; }
+      #featured-projects #fp-inner-container .card .btn {
+        color: #fff;
+        background-color: #373a3c; }
+      #featured-projects #fp-inner-container .card .btn:hover {
+        background-color: #555; }
 
 #other-projects {
   background-color: #b3b3b3;

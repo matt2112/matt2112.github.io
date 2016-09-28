@@ -93,13 +93,16 @@ nav {
 // Featured projects section
 #featured-projects {
     @include white-on-grey;
-    .card {
-        @include dark-on-light;
-        .btn {
-            @include white-on-grey;
-        }
-        .btn:hover {
-            background-color: #555;
+    #fp-inner-container {
+        -webkit-animation-duration: 0.7s;
+        .card {
+            @include dark-on-light;
+            .btn {
+                @include white-on-grey;
+            }
+            .btn:hover {
+                background-color: #555;
+            }
         }
     }
 }
