@@ -1,10 +1,14 @@
 // Mobile-first, so assuming extra small screen sizes and above
-
 // Variables
 $black: #222;
 $darkgrey: #373a3c;
 $lightgrey: #b3b3b3;
 $white: #fff;
+// Google font
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display';
+body {
+    font-family: 'Playfair Display', serif;
+}
 
 // Mixins
 @mixin white-on-grey {
@@ -19,16 +23,33 @@ $white: #fff;
 
 // Navbar
 nav {
-    .nav-item,
-    .nav-link {
-        height: 40px;
-        clear: right;
-        text-align: right;
-        color: $white !important;
+    padding: 0 !important;
+    min-height: 54px;
+    #name {
+        padding-top: 10px;
+        padding-left: 30px;
     }
-    .navbar-toggler {
-        float: right;
-        color: #fff;
+    #menu {
+        margin-top: 10px;
+        .nav-item {
+            .nav-link {
+                width: 543px;
+                color: $white;
+                padding-right: 20px;
+                max-height: 54px;
+                padding-top: 15px;
+                text-align: right;
+            }
+            .nav-link:hover {
+                background-color: $black;
+            }
+        }
+        .navbar-toggler {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            color: $white;
+        }
     }
 }
 
@@ -49,6 +70,7 @@ nav {
         margin-top: 30px;
     }
     #summary {
+        font-weight: bold;
         max-width: 480px;
         margin: 0 auto;
         padding-top: 10px;
@@ -104,7 +126,7 @@ nav {
                 @include white-on-grey;
             }
             .btn:hover {
-                background-color: #555;
+                background-color: $black;
             }
         }
     }
@@ -118,7 +140,7 @@ nav {
         color: #333;
     }
     #expand-span {
-        font-size: 18px;
+        font-size: 0.65em;
     }
     .card {
         @include white-on-grey;
@@ -197,6 +219,40 @@ footer {
 
 // Bootstrap small size
 @media screen and (min-width: 544px) {
+    nav {
+        padding: 0 !important;
+        //        min-height: 54px;
+        #name {
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+        #menu {
+            margin-top: 0;
+            padding-right: 7px;
+            .nav-item {
+                margin: 0;
+                padding-left: 8px;
+                padding-right: 8px;
+                .nav-link {
+                    width: 100%;
+                    color: $white;
+                    padding-right: 0;
+                    max-height: 54px;
+                    padding-top: 15px;
+                    text-align: center;
+                }
+            }
+            .nav-item:hover {
+                background-color: $black;
+            }
+            .navbar-toggler {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                color: $white;
+            }
+        }
+    }
     #home {
         padding-left: 30px;
         #profile-pic {

@@ -1,12 +1,29 @@
-nav .nav-item,
-nav .nav-link {
-  height: 40px;
-  clear: right;
-  text-align: right;
-  color: #fff !important; }
-nav .navbar-toggler {
-  float: right;
-  color: #fff; }
+@import "https://fonts.googleapis.com/css?family=Playfair+Display";
+body {
+  font-family: 'Playfair Display', serif; }
+
+nav {
+  padding: 0 !important;
+  min-height: 54px; }
+  nav #name {
+    padding-top: 10px;
+    padding-left: 30px; }
+  nav #menu {
+    margin-top: 10px; }
+    nav #menu .nav-item .nav-link {
+      width: 543px;
+      color: #fff;
+      padding-right: 20px;
+      max-height: 54px;
+      padding-top: 15px;
+      text-align: right; }
+    nav #menu .nav-item .nav-link:hover {
+      background-color: #222; }
+    nav #menu .navbar-toggler {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      color: #fff; }
 
 #home {
   margin-top: 54px;
@@ -23,6 +40,7 @@ nav .navbar-toggler {
     border-radius: 10px;
     margin-top: 30px; }
   #home #summary {
+    font-weight: bold;
     max-width: 480px;
     margin: 0 auto;
     padding-top: 10px;
@@ -68,7 +86,7 @@ nav .navbar-toggler {
         color: #fff;
         background-color: #373a3c; }
       #featured-projects #fp-inner-container .card .btn:hover {
-        background-color: #555; }
+        background-color: #222; }
 
 #other-projects {
   background-color: #b3b3b3;
@@ -76,7 +94,7 @@ nav .navbar-toggler {
   #other-projects #panel-heading a {
     color: #333; }
   #other-projects #expand-span {
-    font-size: 18px; }
+    font-size: 0.65em; }
   #other-projects .card {
     color: #fff;
     background-color: #373a3c; }
@@ -137,6 +155,33 @@ footer {
     padding: 10px; }
 
 @media screen and (min-width: 544px) {
+  nav {
+    padding: 0 !important; }
+    nav #name {
+      padding-top: 10px;
+      padding-left: 30px; }
+    nav #menu {
+      margin-top: 0;
+      padding-right: 7px; }
+      nav #menu .nav-item {
+        margin: 0;
+        padding-left: 8px;
+        padding-right: 8px; }
+        nav #menu .nav-item .nav-link {
+          width: 100%;
+          color: #fff;
+          padding-right: 0;
+          max-height: 54px;
+          padding-top: 15px;
+          text-align: center; }
+      nav #menu .nav-item:hover {
+        background-color: #222; }
+      nav #menu .navbar-toggler {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        color: #fff; }
+
   #home {
     padding-left: 30px; }
     #home #profile-pic {
