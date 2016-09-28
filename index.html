@@ -8,7 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <link rel=stylesheet href="styles/bootstrap.flex.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
@@ -47,14 +47,14 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <section id="home">
+        <div id="profile-pic-container">
+            <img id="profile-pic" src="img/me.jpg" alt="picture of me">
+        </div>
+        <h2 id="summary" class="animated fadeIn">Hi, I'm Matt, a Front End Web Developer based in London, UK.</h2>
+    </section>
 
-        <section id="home">
-            <div id="profile-pic-container">
-                <img id="profile-pic" src="img/me.jpg" alt="picture of me">
-            </div>
-            <h2 id="summary">Hi, I'm Matt, a Front End Web Developer based in London, UK.</h2>
-        </section>
+    <div class="container-fluid">
 
         <section id="featured-projects" class="row">
             <header class="col-xs-12">
@@ -135,13 +135,11 @@
 
         <section id="other-projects" role="tablist" aria-multiselectable="true" class="row">
             <div class="panel panel-default col-xs-12">
-                <header class="panel-heading" role="tab" id="panel-heading">
-                    <h3>
-                        <a data-toggle="collapse" data-parent="#other-projects" href="#collapse" aria-expanded="true" aria-controls="collapse">Other projects</a>
-                        <span id="expand-span">(click to expand)</span>
-                    </h3>
-                </header>
-                <div id="collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="panel-heading">
+                <h3 class="panel-heading" role="tab" id="panel-heading">
+                    <a data-toggle="collapse" data-parent="#other-projects" href="#collapse" aria-expanded="true" aria-controls="collapse">Other projects</a>
+                    <span id="expand-span">(click to expand)</span>
+                </h3>
+                <div id="collapse" class="panel-collapse collapse  animated fadeIn" role="tabpanel" aria-labelledby="panel-heading">
                     <div class="row">
                         <article class="card col-sm-6 col-md-4 col-xl-3">
                             <a href="https://matt2112.github.io/markdown-previewer/" target="_blank">
@@ -267,7 +265,10 @@
                 </ul>
             </article>
             <article id="external-links" class="col-xs-12">
-                <p>Follow me on <a href="https://github.com/matt2112" target="_blank"><img src="img/github.png" id="github"></a> and/or add me on <a href="https://uk.linkedin.com/in/matthew-lewis-322b71103" target="_blank"><img src="img/linkedin.png"></a></p>
+                <p>Follow me on
+                    <a href="https://github.com/matt2112" target="_blank"><img src="img/github.png" id="github"></a> and/or add me on
+                    <a href="https://uk.linkedin.com/in/matthew-lewis-322b71103" target="_blank"><img src="img/linkedin.png"></a>
+                </p>
             </article>
         </section>
 
@@ -308,8 +309,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="scripts.js"></script>
 </body>
 
 </html>

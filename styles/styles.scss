@@ -1,3 +1,4 @@
+// Mobile-first, so assuming extra small screen sizes and above
 // Variables
 $black: #222;
 $darkgrey: #373a3c;
@@ -14,13 +15,51 @@ $white: #fff;
     background-color: $lightgrey;
 }
 
-// Global styles
-// Mobile-first, so assuming extra small screen sizes and above
-body {
-    .container-fluid {
-        padding: 0;
-        margin-top: 54px;
+// Navbar
+nav {
+    .nav-item,
+    .nav-link {
+        height: 40px;
+        clear: right;
+        text-align: right;
+        color: $white !important;
     }
+    .navbar-toggler {
+        float: right;
+        color: #fff;
+    }
+}
+
+// Home section
+#home {
+    margin-top: 54px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    height: 400px;
+    background: url('../img/lake1.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    //    overflow: auto;
+    #profile-pic {
+        border-radius: 10px;
+    }
+    #summary {
+        max-width: 480px;
+        padding-top: 10px;
+        color: $black;
+        font-size: 2em;
+    }
+}
+
+.container-fluid {
+    padding: 0;
+    position: relative;
+    top: 454px;
+    // Styles applied to multiple sections
     .row {
         margin: 0;
         padding: 15px;
@@ -51,43 +90,6 @@ body {
     }
 }
 
-// Navbar
-nav {
-    .nav-item,
-    .nav-link {
-        height: 40px;
-        clear: right;
-        text-align: right;
-        color: $white !important;
-    }
-    .navbar-toggler {
-        float: right;
-        color: #fff;
-    }
-}
-
-// Home section
-#home {
-    text-align: center;
-    padding: 20px;
-    height: 400px;
-    background: url('../img/lake1.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    //    overflow: auto;
-    #profile-pic {
-        border-radius: 10px;
-    }
-    #summary {
-        max-width: 480px;
-        padding-top: 10px;
-        color: $black;
-        font-size: 2em;
-    }
-}
-
 // Featured projects section
 #featured-projects {
     @include white-on-grey;
@@ -105,6 +107,7 @@ nav {
 // Other projects section
 #other-projects {
     background-color: $lightgrey;
+    position: relative;
     #panel-heading a {
         color: #333;
     }
