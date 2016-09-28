@@ -17,10 +17,10 @@
     <nav id="navbar" class="navbar navbar-dark bg-inverse navbar-fixed-top">
         <a id="name" class="navbar-brand" href="#">Matt Lewis</a>
         <div id="menu" class="pull-xs-right">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 &#9776;
             </button>
-            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+            <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
                 <ul id="navList" class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#featured-projects">
@@ -48,9 +48,7 @@
     </nav>
 
     <section id="home">
-<!--        <div id="profile-pic-container">-->
-            <img id="profile-pic" src="img/me.jpg" alt="picture of me">
-<!--        </div>-->
+        <img id="profile-pic" src="img/me.jpg" alt="picture of me">
         <h2 id="summary" class="animated zoomIn">Hi, I'm Matt, a Front End Web Developer based in London, UK.</h2>
     </section>
 
@@ -133,13 +131,13 @@
 
         </section>
 
-        <section id="other-projects" role="tablist" aria-multiselectable="true" class="row">
-            <div class="panel panel-default col-xs-12">
+        <section id="other-projects" class="row">
+            <div class="panel panel-default col-xs-12" role="tablist" aria-multiselectable="true">
                 <h3 class="panel-heading" role="tab" id="panel-heading">
                     <a data-toggle="collapse" data-parent="#other-projects" href="#collapse" aria-expanded="true" aria-controls="collapse">Other projects</a>
                     <span id="expand-span">(click to expand)</span>
                 </h3>
-                <div id="collapse" class="panel-collapse collapse  animated fadeIn" role="tabpanel" aria-labelledby="panel-heading">
+                <div id="collapse" class="panel-collapse collapse animated fadeIn" role="tabpanel" aria-labelledby="panel-heading">
                     <div class="row">
                         <article class="card col-sm-6 col-md-4 col-xl-3">
                             <a href="https://matt2112.github.io/markdown-previewer/" target="_blank">
@@ -246,8 +244,8 @@
             <header class="col-xs-12">
                 <h3>About</h3>
             </header>
-            <article class="col-xs-12">
-                <p>Most of the above projects were built to the specifications outlined in the <a href="https://www.freecodecamp.com/freeCodeCamp" target="_blank">freeCodeCamp</a> curriculum. The Python projects were built as part of the Coursera <a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">Rice University Fundamentals of Computing</a> MOOC.</p>
+            <div class="col-xs-12">
+                <p>Most of the above projects were built to the specifications outlined in the <a href="https://www.freecodecamp.com/matt2112" target="_blank">freeCodeCamp</a> curriculum. The Python projects were built as part of the Coursera <a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">Rice University Fundamentals of Computing</a> MOOC.</p>
                 <p>I have varying degrees of ability in the following languages, libraries, frameworks and technologies:</p>
                 <ul class="list-group">
                     <li class="list-group-item row">
@@ -263,13 +261,15 @@
                         <span class="tag tag-pill pull-xs-right">Basic</span>
                     </li>
                 </ul>
-            </article>
-            <article id="external-links" class="col-xs-12">
-                <p>Follow me on
-                    <a href="https://github.com/matt2112" target="_blank"><img src="img/github.png" id="github"></a> and add me on
-                    <a href="https://uk.linkedin.com/in/matthew-lewis-322b71103" target="_blank"><img src="img/linkedin.png"></a>
+            </div>
+            <div id="external-links" class="row col-xs-12">
+                <p class="col-sm-6 col-lg-3">Follow me on
+                    <a id="github" href="https://github.com/matt2112" target="_blank"><img src="img/github.png" alt="github logo"></a>
                 </p>
-            </article>
+                <p class="col-sm-6 col-lg-3">Add me on
+                    <a id="linkedin" href="https://uk.linkedin.com/in/matthew-lewis-322b71103" target="_blank"><img src="img/linkedin.png" alt="linkedin logo"></a>
+                </p>
+            </div>
         </section>
 
         <section id="contact" class="row">
@@ -280,22 +280,22 @@
             <form action="https://formspree.io/matt_lewis@live.co.uk" method="POST" class="row col-xs-12">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" class="form-control">
+                        <label for="formname">Name</label>
+                        <input id="formname" type="text" name="name" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="name">Email</label>
-                        <input type="email" name="email" class="form-control">
+                        <label for="formemail">Email</label>
+                        <input id="formemail" type="email" name="email" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="name">Subject</label>
-                        <input type="text" name="subject" class="form-control">
+                        <label for="formsubject">Subject</label>
+                        <input id="formsubject" type="text" name="subject" class="form-control">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea name="message" class="form-control" rows="7"></textarea>
+                        <label for="formmessage">Message</label>
+                        <textarea id="formmessage" name="message" class="form-control" rows="7"></textarea>
                     </div>
                     <input type="submit" value="Send" class="btn">
                 </div>

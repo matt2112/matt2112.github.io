@@ -104,10 +104,17 @@ nav .navbar-toggler {
       background-color: #373a3c; }
   #about #external-links {
     margin-top: 20px; }
-    #about #external-links p img {
-      width: 100px;
-      height: 40px;
-      background-color: #fff; }
+    #about #external-links p {
+      padding: 0; }
+      #about #external-links p img {
+        width: 100px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 4px; }
+      #about #external-links p #github {
+        margin-left: 2px; }
+      #about #external-links p #linkedin {
+        margin-left: 20px; }
 
 #contact {
   color: #373a3c;
@@ -141,7 +148,10 @@ footer {
       margin: 0; }
 
   .card {
-    max-width: 48%; } }
+    max-width: 48%; }
+
+  #about #linkedin {
+    margin-left: 2px !important; } }
 @media screen and (min-width: 768px) {
   .card {
     max-width: 32%; }

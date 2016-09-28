@@ -1,9 +1,11 @@
 // Mobile-first, so assuming extra small screen sizes and above
+
 // Variables
 $black: #222;
 $darkgrey: #373a3c;
 $lightgrey: #b3b3b3;
 $white: #fff;
+
 // Mixins
 @mixin white-on-grey {
     color: $white;
@@ -151,10 +153,18 @@ nav {
     #external-links {
         margin-top: 20px;
         p {
+            padding: 0;
             img {
                 width: 100px;
                 height: 40px;
                 background-color: $white;
+                border-radius: 4px;
+            }
+            #github {
+                margin-left: 2px;
+            }
+            #linkedin {
+                margin-left: 20px;
             }
         }
     }
@@ -201,6 +211,11 @@ footer {
     }
     .card {
         max-width: 48%;
+    }
+    #about {
+        #linkedin {
+            margin-left: 2px !important;
+        }
     }
 }
 
