@@ -1,9 +1,11 @@
 // Mobile-first, so assuming extra small screen sizes and above
+
 // Variables
 $black: #222;
 $darkgrey: #373a3c;
 $lightgrey: #b3b3b3;
 $white: #fff;
+
 // Google font
 @import 'https://fonts.googleapis.com/css?family=Playfair+Display';
 body {
@@ -55,6 +57,7 @@ nav {
 
 // Home section
 #home {
+    z-index: -3;
     margin-top: 54px;
     position: fixed;
     width: 100%;
@@ -81,35 +84,45 @@ nav {
 
 .container-fluid {
     padding: 0;
-    position: relative;
+    position: absolute;
     top: 454px;
-    // Styles applied to multiple sections
     .row {
         margin: 0;
         padding: 15px;
     }
-    .card {
-        margin: 5px auto;
-        .card-img-top {
-            padding-top: 15px;
-            opacity: 0.8;
-            /* For IE8 and earlier */
-            filter: alpha(opacity=80);
-        }
-        .card-img-top:hover {
-            opacity: 1.0;
-            /* For IE8 and earlier */
-            filter: alpha(opacity=100);
-        }
-        .card-block {
-            padding-left: 3%;
-            p {
-                padding-bottom: 40px;
-            }
-        }
-        .btn {
+    // Styles applied to multiple sections
+    section {
+        position: relative;
+        .anchor {
             position: absolute;
-            bottom: 10px;
+            width: 0;
+            height: 0;
+            top: -54px;
+            left: 0;
+        }
+        .card {
+            margin: 5px auto;
+            .card-img-top {
+                padding-top: 15px;
+                opacity: 0.8;
+                /* For IE8 and earlier */
+                filter: alpha(opacity=80);
+            }
+            .card-img-top:hover {
+                opacity: 1.0;
+                /* For IE8 and earlier */
+                filter: alpha(opacity=100);
+            }
+            .card-block {
+                padding-left: 3%;
+                p {
+                    padding-bottom: 40px;
+                }
+            }
+            .btn {
+                position: absolute;
+                bottom: 10px;
+            }
         }
     }
 }
@@ -118,6 +131,7 @@ nav {
 #featured-projects {
     @include white-on-grey;
     #fp-inner-container {
+        padding: 0;
         -webkit-animation-duration: 0.7s;
         animation-duration: 0.7s;
         .card {
@@ -136,26 +150,34 @@ nav {
 #other-projects {
     background-color: $lightgrey;
     position: relative;
-    #panel-heading a {
-        color: #333;
+    #panel-heading {
+        a {
+            color: #333;
+        }
     }
     #expand-span {
         font-size: 0.65em;
     }
-    .card {
-        @include white-on-grey;
-    }
-    .btn {
-        @include dark-on-light;
-    }
-    .btn:hover {
-        color: $white;
-        background-color: $black;
+    #collapse {
+        #collapse-inner {
+            padding: 0;
+            .card {
+                @include white-on-grey;
+                .btn {
+                    @include dark-on-light;
+                }
+                .btn:hover {
+                    color: $white;
+                    background-color: $black;
+                }
+            }
+        }
     }
 }
 
 // About section
 #about {
+    position: relative;
     @include white-on-grey;
     a {
         color: $lightgrey;

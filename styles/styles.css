@@ -26,6 +26,7 @@ nav {
       color: #fff; }
 
 #home {
+  z-index: -3;
   margin-top: 54px;
   position: fixed;
   width: 100%;
@@ -49,34 +50,43 @@ nav {
 
 .container-fluid {
   padding: 0;
-  position: relative;
+  position: absolute;
   top: 454px; }
   .container-fluid .row {
     margin: 0;
     padding: 15px; }
-  .container-fluid .card {
-    margin: 5px auto; }
-    .container-fluid .card .card-img-top {
-      padding-top: 15px;
-      opacity: 0.8;
-      /* For IE8 and earlier */
-      filter: alpha(opacity=80); }
-    .container-fluid .card .card-img-top:hover {
-      opacity: 1.0;
-      /* For IE8 and earlier */
-      filter: alpha(opacity=100); }
-    .container-fluid .card .card-block {
-      padding-left: 3%; }
-      .container-fluid .card .card-block p {
-        padding-bottom: 40px; }
-    .container-fluid .card .btn {
+  .container-fluid section {
+    position: relative; }
+    .container-fluid section .anchor {
       position: absolute;
-      bottom: 10px; }
+      width: 0;
+      height: 0;
+      top: -54px;
+      left: 0; }
+    .container-fluid section .card {
+      margin: 5px auto; }
+      .container-fluid section .card .card-img-top {
+        padding-top: 15px;
+        opacity: 0.8;
+        /* For IE8 and earlier */
+        filter: alpha(opacity=80); }
+      .container-fluid section .card .card-img-top:hover {
+        opacity: 1.0;
+        /* For IE8 and earlier */
+        filter: alpha(opacity=100); }
+      .container-fluid section .card .card-block {
+        padding-left: 3%; }
+        .container-fluid section .card .card-block p {
+          padding-bottom: 40px; }
+      .container-fluid section .card .btn {
+        position: absolute;
+        bottom: 10px; }
 
 #featured-projects {
   color: #fff;
   background-color: #373a3c; }
   #featured-projects #fp-inner-container {
+    padding: 0;
     -webkit-animation-duration: 0.7s;
     animation-duration: 0.7s; }
     #featured-projects #fp-inner-container .card {
@@ -95,17 +105,20 @@ nav {
     color: #333; }
   #other-projects #expand-span {
     font-size: 0.65em; }
-  #other-projects .card {
-    color: #fff;
-    background-color: #373a3c; }
-  #other-projects .btn {
-    color: #373a3c;
-    background-color: #b3b3b3; }
-  #other-projects .btn:hover {
-    color: #fff;
-    background-color: #222; }
+  #other-projects #collapse #collapse-inner {
+    padding: 0; }
+    #other-projects #collapse #collapse-inner .card {
+      color: #fff;
+      background-color: #373a3c; }
+      #other-projects #collapse #collapse-inner .card .btn {
+        color: #373a3c;
+        background-color: #b3b3b3; }
+      #other-projects #collapse #collapse-inner .card .btn:hover {
+        color: #fff;
+        background-color: #222; }
 
 #about {
+  position: relative;
   color: #fff;
   background-color: #373a3c; }
   #about a {
