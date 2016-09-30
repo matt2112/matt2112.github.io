@@ -1,11 +1,9 @@
 // Mobile-first, so assuming extra small screen sizes and above
-
 // Variables
 $black: #222;
 $darkgrey: #373a3c;
 $lightgrey: #b3b3b3;
 $white: #fff;
-
 // Google font
 @import 'https://fonts.googleapis.com/css?family=Playfair+Display';
 body {
@@ -185,7 +183,7 @@ nav {
     ul {
         color: $darkgrey;
         .list-text {
-            max-width: 50vmin;
+            max-width: 45vmin;
             display: inline-block;
             padding: 0;
             margin: 0;
@@ -243,7 +241,6 @@ footer {
 @media screen and (min-width: 544px) {
     nav {
         padding: 0 !important;
-        //        min-height: 54px;
         #name {
             padding-top: 10px;
             padding-left: 30px;
@@ -291,6 +288,11 @@ footer {
         max-width: 48%;
     }
     #about {
+        ul {
+            .list-text {
+                max-width: 360px;
+            }
+        }
         #linkedin {
             margin-left: 2px !important;
         }
@@ -316,6 +318,13 @@ footer {
         #fp-inner-container {
             -webkit-animation-duration: 0.9s;
             animation-duration: 0.9s;
+        }
+    }
+    #about {
+        ul {
+            .list-text {
+                max-width: 590px;
+            }
         }
     }
 }

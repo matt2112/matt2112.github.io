@@ -126,7 +126,7 @@ nav {
   #about ul {
     color: #373a3c; }
     #about ul .list-text {
-      max-width: 50vmin;
+      max-width: 45vmin;
       display: inline-block;
       padding: 0;
       margin: 0; }
@@ -208,6 +208,8 @@ footer {
   .card {
     max-width: 48%; }
 
+  #about ul .list-text {
+    max-width: 360px; }
   #about #linkedin {
     margin-left: 2px !important; } }
 @media screen and (min-width: 768px) {
@@ -222,7 +224,10 @@ footer {
 
   #featured-projects #fp-inner-container {
     -webkit-animation-duration: 0.9s;
-    animation-duration: 0.9s; } }
+    animation-duration: 0.9s; }
+
+  #about ul .list-text {
+    max-width: 590px; } }
 @media screen and (min-width: 992px) {
   .card {
     max-width: 32%; }
