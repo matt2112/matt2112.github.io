@@ -57,7 +57,7 @@ nav {
 #home {
     z-index: -3;
     margin-top: 54px;
-//    position: fixed;
+    position: fixed;
     width: 100%;
     text-align: center;
     height: 400px;
@@ -123,11 +123,12 @@ nav {
     @include white-on-grey;
     #fp-inner-container {
         padding: 0;
-        -webkit-animation-duration: 0.7s;
-        animation-duration: 0.7s;
+        // anticipate loading animation from bottom
+        margin-top: 500px;
         .card {
             @include dark-on-light;
             .btn {
+                @include white-on-grey;
                 @include white-on-grey;
             }
             .btn:hover {
@@ -307,12 +308,6 @@ footer {
             }
         }
     }
-    #featured-projects {
-        #fp-inner-container {
-            -webkit-animation-duration: 0.9s;
-            animation-duration: 0.9s;
-        }
-    }
     #about {
         ul {
             .list-text {
@@ -331,8 +326,10 @@ footer {
         margin-bottom: 50px !important;
     }
     #featured-projects {
+        header {
+            margin-bottom: 50px;
+        }
         #fp-inner-container {
-            margin-top: 50px;
             margin-bottom: 50px;
         }
     }

@@ -28,6 +28,7 @@ nav {
 #home {
   z-index: -3;
   margin-top: 54px;
+  position: fixed;
   width: 100%;
   text-align: center;
   height: 400px;
@@ -80,12 +81,13 @@ nav {
   background-color: #373a3c; }
   #featured-projects #fp-inner-container {
     padding: 0;
-    -webkit-animation-duration: 0.7s;
-    animation-duration: 0.7s; }
+    margin-top: 500px; }
     #featured-projects #fp-inner-container .card {
       color: #373a3c;
       background-color: #b3b3b3; }
       #featured-projects #fp-inner-container .card .btn {
+        color: #fff;
+        background-color: #373a3c;
         color: #fff;
         background-color: #373a3c; }
       #featured-projects #fp-inner-container .card .btn:hover {
@@ -215,10 +217,6 @@ footer {
     margin-left: 10px;
     margin-top: 30px; }
 
-  #featured-projects #fp-inner-container {
-    -webkit-animation-duration: 0.9s;
-    animation-duration: 0.9s; }
-
   #about ul .list-text {
     max-width: 590px; } }
 @media screen and (min-width: 992px) {
@@ -228,8 +226,9 @@ footer {
   .upper-row {
     margin-bottom: 50px !important; }
 
+  #featured-projects header {
+    margin-bottom: 50px; }
   #featured-projects #fp-inner-container {
-    margin-top: 50px;
     margin-bottom: 50px; }
 
   #other-projects #collapse {
