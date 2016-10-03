@@ -57,7 +57,7 @@ nav {
 #home {
     z-index: -3;
     margin-top: 54px;
-    position: fixed;
+//    position: fixed;
     width: 100%;
     text-align: center;
     height: 400px;
@@ -91,13 +91,6 @@ nav {
     // Styles applied to multiple sections
     section {
         position: relative;
-        .anchor {
-            position: absolute;
-            width: 0;
-            height: 0;
-            top: -54px;
-            left: 0;
-        }
         .card {
             margin: 5px auto;
             .card-img-top {
