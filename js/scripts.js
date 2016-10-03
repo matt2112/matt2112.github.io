@@ -20,4 +20,16 @@ $(document).ready(function() {
         }, 1200, 'easeInOutExpo');
         event.preventDefault();
     });
+    
+    // Fade in other projects when opened
+    var opclicked = false;
+    $('#op-header').on('click', function() {
+        if (!opclicked) {
+            $('#collapse').fadeIn(1000);
+            opclicked = true;
+        } else {
+            $('#collapse').fadeOut(500);
+            opclicked = false;
+        }
+    });
 });
