@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     // Fade in summary text
-    $('#summary').hide(0).delay(200).fadeIn(1500);
+    $('#summary').delay(200).fadeIn(1500);
     
     // Slide featured projects in from bottom
     $('#fp-inner-container').animate({marginTop:"-=500px"}, 1200);
