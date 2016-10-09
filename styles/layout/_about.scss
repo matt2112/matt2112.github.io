@@ -1,0 +1,68 @@
+#about {
+    position: relative;
+    @include white-on-grey;
+    a {
+        color: $lightgrey;
+    }
+    ul {
+        color: $darkgrey;
+        .list-text {
+            max-width: 45vmin;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+        .tag {
+            @include white-on-grey;
+        }
+    }
+    #external-links {
+        margin-top: 20px;
+        p {
+            padding: 0;
+            img {
+                width: 100px;
+                height: 40px;
+                background-color: $white;
+                border-radius: 4px;
+            }
+            #github {
+                margin-left: 2px;
+            }
+            #linkedin {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 544px) {
+    #about {
+        ul {
+            .list-text {
+                max-width: 360px;
+            }
+        }
+        #linkedin {
+            margin-left: 2px !important;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #about {
+        ul {
+            .list-text {
+                max-width: 590px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #about {
+        ul {
+            max-width: 49%;
+        }
+    }
+}

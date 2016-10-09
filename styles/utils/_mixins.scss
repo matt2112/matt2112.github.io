@@ -1,0 +1,9 @@
+@mixin white-on-grey {
+    color: $white;
+    background-color: $darkgrey;
+}
+
+@mixin dark-on-light {
+    color: $darkgrey;
+    background-color: $lightgrey;
+}

@@ -1,0 +1,29 @@
+#featured-projects {
+    @include white-on-grey;
+    #fp-inner-container {
+        padding: 0;
+        // anticipate loading animation from bottom
+        margin-top: 500px;
+        .card {
+            @include dark-on-light;
+            .btn {
+                @include white-on-grey;
+                @include white-on-grey;
+            }
+            .btn:hover {
+                background-color: $black;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #featured-projects {
+        header {
+            margin-bottom: 50px;
+        }
+        #fp-inner-container {
+            margin-bottom: 50px;
+        }
+    }
+}

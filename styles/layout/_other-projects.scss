@@ -1,0 +1,36 @@
+#other-projects {
+    background-color: $lightgrey;
+    position: relative;
+    #panel-heading {
+        a {
+            color: #333;
+        }
+    }
+    #expand-span {
+        font-size: 0.65em;
+    }
+    #collapse {
+        #collapse-inner {
+            padding: 0;
+            .card {
+                @include white-on-grey;
+                .btn {
+                    @include dark-on-light;
+                }
+                .btn:hover {
+                    color: $white;
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #other-projects {
+        #collapse {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+}

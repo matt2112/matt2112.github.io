@@ -1,0 +1,13 @@
+#contact {
+    @include dark-on-light;
+    form {
+        padding-left: 0;
+        padding-right: 0;
+        textarea {
+            resize: none;
+        }
+        .btn {
+            @include white-on-grey;
+        }
+    }
+}
