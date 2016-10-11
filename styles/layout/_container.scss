@@ -36,19 +36,19 @@
     }
 }
 
-@media screen and (min-width: 544px) {
+@media screen and (min-width: $breakpoint-small) {
     .card {
         max-width: 48%;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpoint-medium) {
     .card {
         max-width: 32%;
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $breakpoint-large) {
     .card {
         max-width: 30%;
     }
@@ -57,7 +57,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $breakpoint-extralarge) {
     .card {
         max-width: 28%;
     }
