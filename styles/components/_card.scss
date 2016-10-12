@@ -1,0 +1,37 @@
+ .card {
+     letter-spacing: 0.05em;
+     margin: 5px auto;
+     .card-img-top {
+         padding-top: 15px;
+         opacity: 0.8;
+         /* For IE8 and earlier */
+         filter: alpha(opacity=80);
+     }
+     .card-img-top:hover {
+         opacity: 1.0;
+         /* For IE8 and earlier */
+         filter: alpha(opacity=100);
+     }
+     .card-block {
+         padding-left: 3%;
+         p {
+             padding-bottom: 40px;
+         }
+     }
+     .btn {
+         position: absolute;
+         bottom: 10px;
+     }
+     @media screen and (min-width: $breakpoint-small) {
+         max-width: 48%;
+     }
+     @media screen and (min-width: $breakpoint-medium) {
+         max-width: 32%;
+     }
+     @media screen and (min-width: $breakpoint-large) {
+         max-width: 30%;
+     }
+     @media screen and (min-width: $breakpoint-extralarge) {
+         max-width: 28%;
+     }
+ }
