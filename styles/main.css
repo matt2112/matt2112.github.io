@@ -1,6 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Playfair+Display";
 body {
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.1em; }
 
 nav {
   padding: 0 !important;
