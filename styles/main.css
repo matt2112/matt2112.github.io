@@ -103,45 +103,28 @@ nav {
   margin-top: 54px;
   position: fixed;
   width: 100%;
-  text-align: center;
-  height: 100vh;
-  background: url("../img/bg/lake.jpeg");
-  background-size: cover; }
-  #home #profile-pic {
-    border-radius: 10px;
-    margin-top: 30px; }
-  #home #summary {
-    display: none;
-    font-weight: bold;
-    max-width: 480px;
-    margin: 0 auto;
-    padding-top: 10px;
-    color: #222;
-    font-size: 2em; }
+  text-align: center; }
+  #home div {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.6), transparent);
+    height: 40vh;
+    margin: 20vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #home div #summary {
+      /* Don't display on load, fade in with jquery */
+      display: none;
+      font-weight: bold;
+      color: #fff;
+      font-size: 2em;
+      text-shadow: 2px 2px #222;
+      padding-left: 10px;
+      padding-right: 10px; }
+  @media screen and (min-width: 544px) {
+    #home div #summary {
+      font-size: 2.5em; } }
 
-@media screen and (min-width: 544px) {
-  #home {
-    padding-left: 30px; }
-    #home #profile-pic {
-      float: left; }
-    #home #summary {
-      float: left;
-      text-align: left;
-      max-width: 500px;
-      margin: 0; } }
-@media screen and (min-width: 768px) {
-  #home #summary {
-    padding-top: 0;
-    max-width: 410px;
-    margin-left: 10px;
-    margin-top: 30px; } }
-@media screen and (min-width: 992px) {
-  #home #summary {
-    max-width: 500px; } }
-@media screen and (min-width: 1200px) {
-  #home #summary {
-    font-size: 2.5em;
-    max-width: 650px; } }
 #featured-projects {
   color: #fff;
   background-color: #373a3c; }
